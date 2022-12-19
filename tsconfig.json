@@ -1,12 +1,38 @@
 {
-    "compilerOptions": {
-        "outDir": "./dist/",
-        "noImplicitAny": true,
-        "target": "es5",
-        "allowJs": true,
-        "module": "ESNext",
-        "moduleResolution": "Node",
-        "esModuleInterop": true,
-        "allowSyntheticDefaultImports": true
-    }
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+	"outDir": "ts-built",
+    "types": [
+      "webpack-env",
+	  "node",
+	  "vue"
+    ],
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  "exclude": [
+    "node_modules",	
+	"ts-built"
+  ]
 }

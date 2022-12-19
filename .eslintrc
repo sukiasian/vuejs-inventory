@@ -1,6 +1,10 @@
 {
-  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
-  "parser": "@typescript-eslint/parser",
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:vue/recommended"],
+//   "parser": "vue-eslint-parser",
+	"parserOptions": {
+		"parser": "@babel/eslint-parser"
+	},
+//   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint"],
   "root": true,
   "env": {
@@ -9,13 +13,16 @@
   "rules": {
     "semi": "warn",
     "arrow-spacing": "warn",
-    "indent": [1, 4],
     "no-empty": "warn",
     "@typescript-eslint/no-var-requires": "off",
     "no-trailing-spaces": 1,
     "space-before-blocks": 1,
     "no-multiple-empty-lines": ["warn", { "max": 1, "maxEOF": 0, "maxBOF": 0 }],
     "comma-dangle": 1,
-    "comma-spacing": 1
+    "comma-spacing": 1,
+    "vue/component-api-style": 1,
+    "vue/html-indent": 1,
+    "vue/script-indent": [1, 4, { "baseIndent": 1 }],
+    "vue/require-default-prop": 0
   }
 }
