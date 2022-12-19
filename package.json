@@ -1,0 +1,15 @@
+{
+  "name": "vuejs-inventory",
+  "version": "1.0.0",
+  "description": "First Vue.js project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "inventory",
+    "vuejs"
+  ],
+  "author": "Sam Sukiasian",
+  "license": "ISC"
+}
